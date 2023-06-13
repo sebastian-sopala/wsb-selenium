@@ -1,6 +1,6 @@
 # Uniwersytet WSB Merito Chorzów
 
-## Kierunerk: Tester oprogrmowania
+## Kierunek: Tester oprogramowania
 ## Projekt końcowy - Automatyzacja testów strony www z wykorzystaniem Selenium
 
 ### Wykonawcy:
