@@ -6,17 +6,19 @@ from selenium.webdriver.support import expected_conditions as EC
 """it contains generic methods and utilities"""
 
 
-class BasePage(unittest.TestCase):
-
+class BasePage:
     def __init__(self, driver):
-        super().__init__()
         self.driver = driver
 
-    def click_on(self, locator):
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(locator)).click()
+    def click_on(self, *selector):
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(selector)).click()
 
-    def wait_for(self, locator):
-        return WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(locator))
+    def wait_for_visible(self, *selector):
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(selector))
 
-    def input_text(self, locator, text):
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(locator))
+    def wait_for_not_visible(self, *selector):
+        WebDriverWait(self.driver, 10).until(EC.invisibility_of_element_located(selector))
+
+    def input_text(self, *selector, text):
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(selector)).send_keys(text)
+        # input_field.send_keys(text)

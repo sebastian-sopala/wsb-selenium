@@ -10,16 +10,13 @@ class HomePage(BasePage):
     cart_link = (By.XPATH, '//a[text()="Cart"]')
 
     def open_contact(self):
-        located_by, locator_value = self.contact_link
-        self.driver.find_element(located_by, locator_value).click()
+        self.click_on(*self.contact_link)
 
     def open_about_us(self):
-        located_by, locator_value = self.about_us_link
-        self.driver.find_element(located_by, locator_value).click()
+        self.click_on(*self.about_us_link)
 
     def open_cart(self):
-        located_by, locator_value = self.cart_link
-        self.driver.find_element(located_by, locator_value).click()
+        self.click_on(*self.cart_link)
 
 
 
