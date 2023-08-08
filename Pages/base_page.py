@@ -1,4 +1,3 @@
-import unittest
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -21,4 +20,3 @@ class BasePage:
 
     def input_text(self, *selector, text):
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(selector)).send_keys(text)
-        # input_field.send_keys(text)
