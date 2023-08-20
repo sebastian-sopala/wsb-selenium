@@ -1,6 +1,5 @@
 import unittest
 from selenium import webdriver
-from time import sleep
 from selenium.webdriver.common.alert import Alert
 from Pages.home_page import HomePage
 
