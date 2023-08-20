@@ -1,9 +1,7 @@
-from telnetlib import EC
-
 from selenium.webdriver.support.wait import WebDriverWait
-
 from Pages.base_page import BasePage
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
 
 
 class AboutUsPage(BasePage):
@@ -15,7 +13,6 @@ class AboutUsPage(BasePage):
     video_paused = (By.CLASS_NAME, "vjs-paused")
     video_playing = (By.CLASS_NAME, "vjs-playing")
 
-
     def click_close_button(self):
         self.click_on(*self.about_us_close_btn)
 
@@ -24,6 +21,9 @@ class AboutUsPage(BasePage):
 
     def play_video(self):
         self.click_on(*self.play_btn)
+
+    def pause_video(self):
+        self.click_on(*self.video_player)
 
     def wait_for_modal_to_appear(self):
         self.wait_for_visible(*self.video_modal)
@@ -35,7 +35,7 @@ class AboutUsPage(BasePage):
         return self.driver.find_element(*self.video_modal).is_displayed()
 
     def wait_for_video_to_pause(self):
-        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(*self.video_paused))
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(self.video_paused))
 
     def video_is_paused(self):
         player = self.driver.find_element(*self.video_player)
@@ -44,7 +44,7 @@ class AboutUsPage(BasePage):
         return "vjs-paused" in player_class
 
     def wait_for_video_to_play(self):
-        return
+        WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(self.video_playing))
 
     def video_is_playing(self):
         player = self.driver.find_element(*self.video_player)
