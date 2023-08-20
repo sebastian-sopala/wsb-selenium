@@ -1,3 +1,5 @@
+from time import sleep
+
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -13,9 +15,11 @@ class BasePage:
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(selector)).click()
 
     def wait_for_visible(self, *selector):
+        sleep(1)
         WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(selector))
 
     def wait_for_not_visible(self, *selector):
+        sleep(1)
         WebDriverWait(self.driver, 10).until(EC.invisibility_of_element_located(selector))
 
     def input_text(self, *selector, text):

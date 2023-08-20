@@ -64,3 +64,7 @@ class AboutUs(unittest.TestCase):
         about_us_page.pause_video()
         about_us_page.wait_for_video_to_pause()
         self.assertTrue(about_us_page.video_is_paused())
+
+
+if __name__ == "__main__":
+    unittest.main(verbosity=2)
