@@ -12,6 +12,7 @@ class HomePage(BasePage):
     logout_link = (By.ID, "logout2")
     place_order_btn = (By.XPATH, '//button[text()="Place Order"]')
 
+
     def open_contact(self):
         self.click_on(*self.contact_link)
 
