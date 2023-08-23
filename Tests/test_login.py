@@ -111,5 +111,29 @@ class Login(unittest.TestCase):
         self.assertEqual(alert.text, "Wrong password.")
         alert.accept()
 
+    def test_log_out(self):
+        login_page = LoginPage(self.driver)
+        home_page = HomePage(self.driver)
+
+        home_page.open_log_in()
+        sleep(1)
+
+        username_text = "uzytkowniktestowy123321"
+        login_page.find_username(username_text, login_page.input_username)
+        sleep(1)
+
+        password_text = "testowy123321"
+        login_page.find_password(password_text, login_page.input_password)
+        sleep(1)
+
+        login_page.find_login()
+        wait = WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.ID, "nameofuser")))
+        if wait:
+            home_page.open_log_out()
+
+        wait_signup = WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.ID, "login2")))
+        self.assertEqual(wait_signup.text, "Log in")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
