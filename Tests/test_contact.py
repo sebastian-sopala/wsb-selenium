@@ -3,7 +3,6 @@ from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.alert import Alert
 from Pages.home_page import HomePage
-
 from Pages.contact_page import ContactPage
 
 
@@ -19,9 +18,7 @@ class Contact(unittest.TestCase):
     def test_close_form_with_close_button(self):
         # TODO can i refactor this boilerplate
         contact_page = ContactPage(self.driver)
-        home_page = HomePage(self.driver)
-
-        home_page.open_contact()
+        home_page = HomePage(self.driver).about_us_link
         sleep(1)  # TODO remove this
         contact_page.assert_modal_is_displayed()
 
