@@ -1,6 +1,7 @@
 # Uniwersytet WSB Merito Chorzów, Poznań
 
-## Kierunek Tester oprogramowania
+## Kierunerk: Tester oprogramowania
+
 ## Projekt końcowy - Automatyzacja testów strony www z wykorzystaniem Selenium
 
 ### Wykonawcy:
@@ -8,6 +9,7 @@
 #### Jacek Stelmach
 #### Sebastian Sopala
 
-#### strona www : www.demoblaze.com
+### obiekt testów : www.demoblaze.com
+
 
 

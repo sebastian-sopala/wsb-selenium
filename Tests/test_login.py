@@ -17,7 +17,7 @@ class Login(unittest.TestCase):
     def tearDown(self):
         self.driver.close()
 
-    def test_succesfully_log_in(self):
+    def test_successfully_log_in(self):
         login_page = LoginPage(self.driver)
         home_page = HomePage(self.driver)
 

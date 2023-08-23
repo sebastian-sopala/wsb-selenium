@@ -7,21 +7,25 @@ class HomePage(BasePage):
     about_us_link = (By.XPATH, '//a[text()="About us"]')
     contact_link = (By.XPATH, '//a[text()="Contact"]')
     cart_link = (By.XPATH, '//a[text()="Cart"]')
+<<<<<<< HEAD
     login_link = (By.ID, "login2")
     signup_link = (By.ID, "signin2")
     logout_link = (By.ID, "logout2")
+=======
+    place_order_btn = (By.XPATH, '//button[text()="Place Order"]')
+>>>>>>> 241fab37f2c77d5df57f673da85ff1ea7682fe33
 
     def open_contact(self):
-        located_by, locator_value = self.contact_link
-        self.driver.find_element(located_by, locator_value).click()
+        self.click_on(*self.contact_link)
 
     def open_about_us(self):
-        located_by, locator_value = self.about_us_link
-        self.driver.find_element(located_by, locator_value).click()
+        self.click_on(*self.about_us_link)
 
     def open_cart(self):
-        located_by, locator_value = self.cart_link
-        self.driver.find_element(located_by, locator_value).click()
+        self.click_on(*self.cart_link)
+
+    def wait_for_cart_page_to_open(self):
+        self.wait_for_visible(*self.place_order_btn)
 
     def open_log_in(self):
         located_by, locator_value = self.login_link
