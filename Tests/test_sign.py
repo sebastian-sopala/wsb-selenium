@@ -1,9 +1,6 @@
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.alert import Alert
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
 
 from Pages.home_page import HomePage
 from Pages.sign_page import SignPage
@@ -53,7 +50,7 @@ class Login(unittest.TestCase):
         home_page.open_sign_up()
         sleep(1)
 
-        username_text = "uzytkowniktestowy123445566666"
+        username_text = "uzytkowniktestowy1234455666665"
         sign_page.find_username(username_text, sign_page.input_username)
         sleep(1)
 
@@ -137,6 +134,7 @@ class Login(unittest.TestCase):
         self.assertTrue(alert)
         self.assertEqual(alert.text, "This user already exist.")
         alert.accept()
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
