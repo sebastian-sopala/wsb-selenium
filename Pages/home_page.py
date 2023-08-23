@@ -7,13 +7,10 @@ class HomePage(BasePage):
     about_us_link = (By.XPATH, '//a[text()="About us"]')
     contact_link = (By.XPATH, '//a[text()="Contact"]')
     cart_link = (By.XPATH, '//a[text()="Cart"]')
-<<<<<<< HEAD
     login_link = (By.ID, "login2")
     signup_link = (By.ID, "signin2")
     logout_link = (By.ID, "logout2")
-=======
     place_order_btn = (By.XPATH, '//button[text()="Place Order"]')
->>>>>>> 241fab37f2c77d5df57f673da85ff1ea7682fe33
 
     def open_contact(self):
         self.click_on(*self.contact_link)
