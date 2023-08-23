@@ -8,6 +8,9 @@ class LoginPage(BasePage):
     input_username = (By.ID, "loginusername")
     input_password = (By.ID, "loginpassword")
     button_login = (By.XPATH, "//button[@onclick='logIn()']")
+    login_close_btn = (By.XPATH, '//div[@id="logInModal"]//button[text()="Close"]')
+    login_modal = (By.XPATH, '//*[text()="Log in"]')
+    login_x_btn = (By.XPATH, '//div[@id="logInModal"]//div[@class="modal-header"]/button/span[text()="×"]')
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -27,9 +30,17 @@ class LoginPage(BasePage):
         located_by, located_value = self.button_login
         self.driver.find_element(located_by, located_value).click()
 
-    def wait_for_alert(self):
-        WebDriverWait(self.driver, 3).until(EC.alert_is_present())
-        return self.alert.text
+    def click_close_button(self):
+        self.click_on(*self.login_close_btn)
 
-    def find_close(self):
-        pass
+    def click_x_icon(self):
+        self.click_on(*self.login_x_btn)
+
+    def wait_for_modal_to_appear(self):
+        self.wait_for_visible(*self.login_modal)
+
+    def wait_for_modal_to_disappear(self):
+        self.wait_for_not_visible(*self.login_modal)
+
+    def modal_is_displayed(self):
+        return self.driver.find_element(*self.login_modal).is_displayed()
