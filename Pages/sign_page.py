@@ -2,13 +2,13 @@ from selenium.webdriver.common.by import By
 from Pages.base_page import BasePage
 
 
-class LoginPage(BasePage):
-    input_username = (By.ID, "loginusername")
-    input_password = (By.ID, "loginpassword")
-    button_login = (By.XPATH, "//button[@onclick='logIn()']")
-    login_close_btn = (By.XPATH, '//div[@id="logInModal"]//button[text()="Close"]')
-    login_modal = (By.XPATH, '//*[text()="Log in"]')
-    login_x_btn = (By.XPATH, '//div[@id="logInModal"]//div[@class="modal-header"]/button/span[text()="×"]')
+class SignPage(BasePage):
+    input_username = (By.ID, "sign-username")
+    input_password = (By.ID, "sign-password")
+    button_register = (By.XPATH, "//button[@onclick='register()']")
+    sign_close_btn = (By.XPATH, '//div[@id="signInModal"]//button[text()="Close"]')
+    sign_modal = (By.XPATH, '//*[text()="Sign up"]')
+    sign_x_btn = (By.XPATH, '//div[@id="signInModal"]//div[@class="modal-header"]/button/span[text()="×"]')
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -25,20 +25,20 @@ class LoginPage(BasePage):
         input_password.send_keys(password)
 
     def find_login(self):
-        located_by, located_value = self.button_login
+        located_by, located_value = self.button_register
         self.driver.find_element(located_by, located_value).click()
 
     def click_close_button(self):
-        self.click_on(*self.login_close_btn)
+        self.click_on(*self.sign_close_btn)
 
     def click_x_icon(self):
-        self.click_on(*self.login_x_btn)
+        self.click_on(*self.sign_x_btn)
 
     def wait_for_modal_to_appear(self):
-        self.wait_for_visible(*self.login_modal)
+        self.wait_for_visible(*self.sign_modal)
 
     def wait_for_modal_to_disappear(self):
-        self.wait_for_not_visible(*self.login_modal)
+        self.wait_for_not_visible(*self.sign_modal)
 
     def modal_is_displayed(self):
-        return self.driver.find_element(*self.login_modal).is_displayed()
+        return self.driver.find_element(*self.sign_modal).is_displayed()

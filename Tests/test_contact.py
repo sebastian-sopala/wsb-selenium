@@ -16,18 +16,12 @@ class Contact(unittest.TestCase):
 
     def test_close_form_with_close_button(self):
         contact_page = ContactPage(self.driver)
-<<<<<<< HEAD
-        home_page = HomePage(self.driver).about_us_link
-        sleep(1)  # TODO remove this
-        contact_page.assert_modal_is_displayed()
-=======
         home_page = HomePage(self.driver)
 
         home_page.open_contact()
 
         contact_page.wait_for_modal_to_appear()
         self.assertTrue(contact_page.modal_is_displayed())
->>>>>>> 241fab37f2c77d5df57f673da85ff1ea7682fe33
 
         contact_page.click_close_button()
 
