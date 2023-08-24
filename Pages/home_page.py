@@ -21,6 +21,9 @@ class HomePage(BasePage):
     def open_cart(self):
         self.click_on(*self.cart_link)
 
+    def open_home(self):
+        self.click_on(*self.home_link)
+
     def wait_for_cart_page_to_open(self):
         self.wait_for_visible(*self.place_order_btn)
 

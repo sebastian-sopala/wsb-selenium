@@ -36,6 +36,19 @@ class Home(unittest.TestCase):
         cart_page.wait_for_home_page_to_open()
         self.assertTrue(cart_page.image_carousel)
 
+    def test_home_pictures(self):
+        home_page = HomePage(self.driver)
+        cart_page = CartPage(self.driver)
+
+        home_page.open_cart()
+
+        home_page.wait_for_cart_page_to_open()
+        self.assertTrue(home_page.place_order_btn)
+
+        cart_page.click_home_image()
+
+        cart_page.wait_for_home_page_to_open()
+        self.assertTrue(cart_page.image_carousel)
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
