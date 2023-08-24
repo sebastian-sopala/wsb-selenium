@@ -11,6 +11,9 @@ class HomePage(BasePage):
     signup_link = (By.ID, "signin2")
     logout_link = (By.ID, "logout2")
     place_order_btn = (By.XPATH, '//button[text()="Place Order"]')
+    first_image = (By.XPATH, '//div[@class="carousel-item"]//img[@src="Samsung1.jpg"]')
+    second_image = (By.XPATH,  '//div[@class="carousel-item"]//img[@src="nexus1.jpg"]')
+    third_image = (By.XPATH,  '//div[@class="carousel-item"]//img[@src="iphone1.jpg"]')
 
     def open_contact(self):
         self.click_on(*self.contact_link)
@@ -38,3 +41,12 @@ class HomePage(BasePage):
     def open_log_out(self):
         located_by, locator_value = self.logout_link
         self.driver.find_element(located_by, locator_value).click()
+
+    def move_image_first(self):
+        self.wait_for_visible(*self.first_image)
+
+    def move_image_second(self):
+        self.wait_for_visible(*self.second_image)
+
+    def move_image_third(self):
+        self.wait_for_visible(*self.third_image)

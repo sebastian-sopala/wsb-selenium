@@ -50,5 +50,15 @@ class Home(unittest.TestCase):
         cart_page.wait_for_home_page_to_open()
         self.assertTrue(cart_page.image_carousel)
 
+    def test_move_images(self):
+        cart_page = CartPage(self.driver)
+        home_page = HomePage(self.driver)
+
+        home_page.move_image_first()
+
+        wait_next_images = WebDriverWait(self.driver, 6).until(EC.visibility_of_element_located(home_page.move_image_second()))
+        self.assertTrue(wait_next_images, home_page.move_image_second())
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
