@@ -4,3 +4,8 @@
 Pages/__pycache__/
 Tests/__pycache__/
 *.log
+
+venv/
+setup.py
+*.egg-info/
+*.txt
