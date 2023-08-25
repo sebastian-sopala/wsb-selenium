@@ -11,9 +11,11 @@ class HomePage(BasePage):
     signup_link = (By.ID, "signin2")
     logout_link = (By.ID, "logout2")
     place_order_btn = (By.XPATH, '//button[text()="Place Order"]')
-    first_image = (By.XPATH, '//div[@class="carousel-item"]//img[@src="Samsung1.jpg"]')
-    second_image = (By.XPATH,  '//div[@class="carousel-item"]//img[@src="nexus1.jpg"]')
-    third_image = (By.XPATH,  '//div[@class="carousel-item"]//img[@src="iphone1.jpg"]')
+    first_image = (By.XPATH, '//img[@src="Samsung1.jpg"]')
+    second_image = (By.XPATH,  '//img[@src="nexus1.jpg"]')
+    third_image = (By.XPATH,  '//img[@src="iphone1.jpg"]')
+    next_icon_right = (By.XPATH, '//a[@class="carousel-control-next"]')
+    next_icon_left = (By.XPATH, '//a[@class="carousel-control-prev"]')
 
     def open_contact(self):
         self.click_on(*self.contact_link)
@@ -43,10 +45,18 @@ class HomePage(BasePage):
         self.driver.find_element(located_by, locator_value).click()
 
     def move_image_first(self):
-        self.wait_for_visible(*self.first_image)
+        return self.driver.find_element(*self.first_image).is_displayed()
 
     def move_image_second(self):
-        self.wait_for_visible(*self.second_image)
+        return self.driver.find_element(*self.second_image).is_displayed()
 
     def move_image_third(self):
-        self.wait_for_visible(*self.third_image)
+        return self.driver.find_element(*self.third_image).is_displayed()
+
+    def find_next_icon(self):
+        located_by, located_value = self.next_icon_right
+        self.driver.find_element(located_by, located_value).click()
+
+    def find_previous_icon(self):
+        located_by, located_value = self.next_icon_left
+        self.driver.find_element(located_by, located_value).click()

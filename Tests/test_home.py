@@ -1,5 +1,4 @@
 import unittest
-from time import sleep
 
 from Pages.home_page import HomePage
 from Pages.cart_page import CartPage
@@ -10,9 +9,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 class Home(unittest.TestCase):
-
-    def __init__(self, methodName: str = ...):
-        super().__init__(methodName)
 
     def setUp(self):
         self.driver = webdriver.Firefox()
@@ -51,13 +47,32 @@ class Home(unittest.TestCase):
         self.assertTrue(cart_page.image_carousel)
 
     def test_move_images(self):
-        cart_page = CartPage(self.driver)
         home_page = HomePage(self.driver)
 
         home_page.move_image_first()
 
-        wait_next_images = WebDriverWait(self.driver, 6).until(EC.visibility_of_element_located(home_page.move_image_second()))
-        self.assertTrue(wait_next_images, home_page.move_image_second())
+        wait_next_images = WebDriverWait(self.driver, 6).until(EC.visibility_of_element_located((By.XPATH, '//img[@src="nexus1.jpg"]')))
+
+        if wait_next_images:
+            home_page.move_image_second()
+
+        self.assertTrue(home_page.move_image_second())
+
+    def test_move_next_icon(self):
+        home_page = HomePage(self.driver)
+
+        home_page.move_image_first()
+        home_page.find_next_icon()
+
+        self.assertTrue(home_page.move_image_second())
+
+    def test_move_previous_icon(self):
+        home_page = HomePage(self.driver)
+
+        home_page.move_image_first()
+        home_page.find_previous_icon()
+
+        self.assertTrue(home_page.move_image_third())
 
 
 if __name__ == "__main__":
