@@ -16,6 +16,10 @@ class HomePage(BasePage):
     third_image = (By.XPATH,  '//img[@src="iphone1.jpg"]')
     next_icon_right = (By.XPATH, '//a[@class="carousel-control-next"]')
     next_icon_left = (By.XPATH, '//a[@class="carousel-control-prev"]')
+    categories_phones = (By.XPATH, '//a[text()="Phones"]')
+    categories_laptops = (By.XPATH, '//a[text()="Laptops"]')
+    categories_monitors = (By.XPATH, '//a[text()="Monitors"]')
+    url_list_items = (By.XPATH, "//a[@href='https://demoblaze.com/index.html#']")
 
     def open_contact(self):
         self.click_on(*self.contact_link)
@@ -60,3 +64,15 @@ class HomePage(BasePage):
     def find_previous_icon(self):
         located_by, located_value = self.next_icon_left
         self.driver.find_element(located_by, located_value).click()
+
+    def click_categories_phones(self):
+        located_by, locator_value = self.categories_phones
+        self.driver.find_element(located_by, locator_value).click()
+
+    def click_categories_laptops(self):
+        located_by, locator_value = self.categories_laptops
+        self.driver.find_element(located_by, locator_value).click()
+
+    def click_categories_monitors(self):
+        located_by, locator_value = self.categories_monitors
+        self.driver.find_element(located_by, locator_value).click()

@@ -1,4 +1,11 @@
-geckodriver.log
-venv
+.idea/
+.pytest_cache
+*.pcy
+Pages/__pycache__/
+Tests/__pycache__/
+*.log
+
+venv/
 setup.py
-Tests/geckodriver.log
+*.egg-info/
+*.txt
