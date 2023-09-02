@@ -5,7 +5,7 @@
 ## Projekt końcowy - Automatyzacja testów strony www z wykorzystaniem Selenium
 
 ### Wykonawcy:
-#### Agnieszka Wudzińska
+#### Agnieszka Nowaczyk
 #### Jacek Stelmach
 #### Sebastian Sopala
 
