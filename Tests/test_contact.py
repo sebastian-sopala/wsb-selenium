@@ -2,7 +2,6 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.common.alert import Alert
 from Pages.home_page import HomePage
-
 from Pages.contact_page import ContactPage
 
 
