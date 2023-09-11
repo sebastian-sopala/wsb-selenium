@@ -5,6 +5,7 @@ from selenium.webdriver.common.alert import Alert
 from Pages.home_page import HomePage
 from Pages.sign_page import SignPage
 from time import sleep
+from datetime import datetime
 
 
 class Login(unittest.TestCase):
@@ -50,7 +51,7 @@ class Login(unittest.TestCase):
         home_page.open_sign_up()
         sleep(1)
 
-        username_text = "uzytkowniktestowy1234455666665"
+        username_text = "uzytkowniktestowy" + datetime.now().strftime("%d_%m_%Y_%H_%M_%S")
         sign_page.find_username(username_text, sign_page.input_username)
         sleep(1)
 

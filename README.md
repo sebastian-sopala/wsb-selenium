@@ -6,10 +6,12 @@
 
 ### Wykonawcy:
 #### Agnieszka Nowaczyk
-#### Jacek Stelmach
 #### Sebastian Sopala
 
 ### obiekt testów : www.demoblaze.com
 
-
+## uruchomienie testów:
+```shell
+pytest Tests/
+```
 
