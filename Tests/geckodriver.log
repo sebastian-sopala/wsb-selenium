@@ -10199,3 +10199,192 @@ Dynamically enable window occlusion 1
 [GPU 8740, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
 [Parent 9788, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
 [GPU 8740, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1694512183620	geckodriver	INFO	Listening on 127.0.0.1:59982
+1694512184042	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4q/4kqfy4_12yj7ygy1nm812l840000gn/T/rust_mozprofileOHhNOw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694512184684	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694512185122	Marionette	INFO	Listening on port 59997
+WebDriver BiDi listening on ws://127.0.0.1:59983
+Read port: 59997
+1694512185437	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59983/devtools/browser/11815aed-7186-4b66-a83e-24061292d367
+1694512192050	Marionette	INFO	Stopped listening on port 59997
+1694512192878	geckodriver	INFO	Listening on 127.0.0.1:60025
+1694512193393	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4q/4kqfy4_12yj7ygy1nm812l840000gn/T/rust_mozprofileHRmPOh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694512193852	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694512194025	Marionette	INFO	Listening on port 60034
+WebDriver BiDi listening on ws://127.0.0.1:60026
+Read port: 60034
+1694512194241	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60026/devtools/browser/2fbefb41-0f31-4125-8c77-dda8c1121e34
+1694512207956	Marionette	INFO	Stopped listening on port 60034
+1694512208675	geckodriver	INFO	Listening on 127.0.0.1:60064
+1694512209190	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4q/4kqfy4_12yj7ygy1nm812l840000gn/T/rust_mozprofilevDJb69"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694512209637	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694512209812	Marionette	INFO	Listening on port 60073
+Read port: 60073
+WebDriver BiDi listening on ws://127.0.0.1:60065
+1694512209866	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60065/devtools/browser/479a1467-32e5-4a8a-b532-4b44114a4dad
+[Child 57744, MediaDecoderStateMachine #1] WARNING: 118776030 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+1694512214098	Marionette	INFO	Stopped listening on port 60073
+1694512214870	geckodriver	INFO	Listening on 127.0.0.1:60102
+1694512215376	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4q/4kqfy4_12yj7ygy1nm812l840000gn/T/rust_mozprofileMkWtVS"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694512215808	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694512216000	Marionette	INFO	Listening on port 60111
+WebDriver BiDi listening on ws://127.0.0.1:60103
+Read port: 60111
+1694512216219	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60103/devtools/browser/f9f7aa2e-208a-4f6c-8bb5-6ffe161b461d
+[Child 57807, MediaDecoderStateMachine #1] WARNING: 115780310 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+1694512219890	Marionette	INFO	Stopped listening on port 60111
+JavaScript warning: https://www.demoblaze.com/node_modules/video.js/dist/video.min.js, line 12: Script terminated by timeout at:
+$a.prototype[e]@https://www.demoblaze.com/node_modules/video.js/dist/video.min.js:12:184717
+ir.withSourceHandlers/</this[e]@https://www.demoblaze.com/node_modules/video.js/dist/video.min.js:12:94524
+value@https://www.demoblaze.com/node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js:2:1600
+value@https://www.demoblaze.com/node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js:2:1339
+
+JavaScript error: resource://gre/actors/AudioPlaybackChild.sys.mjs, line 17: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1694512594059	geckodriver	INFO	Listening on 127.0.0.1:60211
+1694512594578	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4q/4kqfy4_12yj7ygy1nm812l840000gn/T/rust_mozprofilelp19ft"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694512595126	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694512595368	Marionette	INFO	Listening on port 60220
+WebDriver BiDi listening on ws://127.0.0.1:60212
+Read port: 60220
+1694512595574	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://127.0.0.1:60212/devtools/browser/c8faa96f-c3b4-463d-b05d-2b25c25dbbb1
+1694512601428	Marionette	INFO	Stopped listening on port 60220
+JavaScript warning: https://www.demoblaze.com/node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js, line 2: Script terminated by timeout at:
+value@https://www.demoblaze.com/node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js:2:1331
+
+1694515015414	geckodriver	INFO	Listening on 127.0.0.1:60882
+1694515015934	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4q/4kqfy4_12yj7ygy1nm812l840000gn/T/rust_mozprofile71mDCn"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694515016622	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694515016939	Marionette	INFO	Listening on port 60892
+WebDriver BiDi listening on ws://127.0.0.1:60883
+Read port: 60892
+1694515017083	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60883/devtools/browser/22e56a81-40bd-43f5-a05f-c1315671b928
+1694515019282	geckodriver	INFO	Listening on 127.0.0.1:60903
+1694515019798	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4q/4kqfy4_12yj7ygy1nm812l840000gn/T/rust_mozprofilezaCVAz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694515020276	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694515020543	Marionette	INFO	Listening on port 60931
+WebDriver BiDi listening on ws://127.0.0.1:60904
+Read port: 60931
+1694515020758	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60904/devtools/browser/aa9124b8-1d15-4fce-a2a4-b8828d6b42b0
+1694515022307	geckodriver	INFO	Listening on 127.0.0.1:60945
+1694515022823	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4q/4kqfy4_12yj7ygy1nm812l840000gn/T/rust_mozprofilebrT59A"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694515023305	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694515023568	Marionette	INFO	Listening on port 60967
+WebDriver BiDi listening on ws://127.0.0.1:60946
+Read port: 60967
+1694515023794	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60946/devtools/browser/8dbe81f1-33f8-49bf-8d00-1103c2d0dd38
+1694515025208	geckodriver	INFO	Listening on 127.0.0.1:60976
+1694515025717	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4q/4kqfy4_12yj7ygy1nm812l840000gn/T/rust_mozprofilewmbC1O"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694515026204	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694515026469	Marionette	INFO	Listening on port 60998
+WebDriver BiDi listening on ws://127.0.0.1:60977
+Read port: 60998
+1694515026689	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60977/devtools/browser/d1ba1128-cb8b-40d0-ad0e-1e401c373532
+1694515145534	geckodriver	INFO	Listening on 127.0.0.1:61092
+1694515146054	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4q/4kqfy4_12yj7ygy1nm812l840000gn/T/rust_mozprofile5FkEfE"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694515146407	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694515146635	Marionette	INFO	Listening on port 61101
+WebDriver BiDi listening on ws://127.0.0.1:61093
+Read port: 61101
+1694515146821	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://127.0.0.1:61093/devtools/browser/c07aaeea-2ae2-474a-bb70-39cb5b8dbefc
+1694515152593	Marionette	INFO	Stopped listening on port 61101
+JavaScript warning: https://www.demoblaze.com/node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js, line 2: Script terminated by timeout at:
+value@https://www.demoblaze.com/node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js:2:1331
+
+1694515153378	geckodriver	INFO	Listening on 127.0.0.1:61129
+1694515153896	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4q/4kqfy4_12yj7ygy1nm812l840000gn/T/rust_mozprofiletiSDlu"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694515154240	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694515154453	Marionette	INFO	Listening on port 61137
+WebDriver BiDi listening on ws://127.0.0.1:61130
+Read port: 61137
+1694515154632	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://127.0.0.1:61130/devtools/browser/504ed7b0-5a60-4bb7-89d4-652083acb317
+1694515160609	Marionette	INFO	Stopped listening on port 61137
+JavaScript warning: https://www.demoblaze.com/node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js, line 3: Script terminated by timeout at:
+value@https://www.demoblaze.com/node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js:3:12533
+value@https://www.demoblaze.com/node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js:3:2610
+value@https://www.demoblaze.com/node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js:3:2367
+
+1694515161372	geckodriver	INFO	Listening on 127.0.0.1:61167
+1694515161890	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4q/4kqfy4_12yj7ygy1nm812l840000gn/T/rust_mozprofileI0hBiE"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694515162235	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694515162452	Marionette	INFO	Listening on port 61175
+WebDriver BiDi listening on ws://127.0.0.1:61168
+Read port: 61175
+1694515162636	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://127.0.0.1:61168/devtools/browser/1cab7d18-f698-4dca-8c51-6eb57bec8b97
+[Child 58988, MediaDecoderStateMachine #1] WARNING: 11a8d8030 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+1694515165863	Marionette	INFO	Stopped listening on port 61175
+1694515166688	geckodriver	INFO	Listening on 127.0.0.1:61204
+1694515167207	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4q/4kqfy4_12yj7ygy1nm812l840000gn/T/rust_mozprofilepgfBLr"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694515167547	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694515167771	Marionette	INFO	Listening on port 61212
+WebDriver BiDi listening on ws://127.0.0.1:61205
+Read port: 61212
+1694515167927	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+DevTools listening on ws://127.0.0.1:61205/devtools/browser/a6cee8e4-ce0b-4efc-8ccc-fbee3a8bcba2
+[Child 59045, MediaDecoderStateMachine #1] WARNING: 1177d8760 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:321
+1694515171229	Marionette	INFO	Stopped listening on port 61212
+JavaScript warning: https://www.demoblaze.com/node_modules/video.js/dist/video.min.js, line 12: Script terminated by timeout at:
+e.userActive@https://www.demoblaze.com/node_modules/video.js/dist/video.min.js:12:217114
+e.listenForUserActivity_/<@https://www.demoblaze.com/node_modules/video.js/dist/video.min.js:12:217869
+
+JavaScript error: resource://gre/actors/AudioPlaybackChild.sys.mjs, line 17: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment

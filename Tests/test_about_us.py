@@ -1,6 +1,7 @@
 import unittest
 from time import sleep
 from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 from Pages.home_page import HomePage
 from Pages.about_us_page import AboutUsPage
 
@@ -8,7 +9,9 @@ from Pages.about_us_page import AboutUsPage
 class AboutUs(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Firefox()
+        opts = Options()
+        opts.headless = True
+        self.driver = webdriver.Firefox(options=opts)
         self.driver.get(url="https://www.demoblaze.com/")
 
     def tearDown(self):
