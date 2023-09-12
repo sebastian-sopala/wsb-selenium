@@ -9,9 +9,7 @@ from Pages.about_us_page import AboutUsPage
 class AboutUs(unittest.TestCase):
 
     def setUp(self):
-        opts = Options()
-        opts.headless = True
-        self.driver = webdriver.Firefox(options=opts)
+        self.driver = webdriver.Firefox()
         self.driver.get(url="https://www.demoblaze.com/")
 
     def tearDown(self):
